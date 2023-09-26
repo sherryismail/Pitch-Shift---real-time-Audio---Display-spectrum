@@ -181,15 +181,14 @@ namespace OpenC_Demo
 
         private void knobControl1_ValueChanged(object Sender)
         {
-            if (wavein == null && knobControl1.Value != 0)
+            if (wavein == null)//&& knobControl1.Value != 0
             {
                 MessageBox.Show("Please press the Start button first", "Invalid input", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                knobControl1.Value = 0;
                 return;
             }
             else if (efxProcs != null)
             {
-                linearGain = (float)(Math.Pow(10.0, knobControl1.Value / 20.0));//dB volume to linear
+                linearGain = (float)(Math.Pow(10.0, 20.0));//dB volume to linear
                 efxProcs.gain = linearGain;
             }
             

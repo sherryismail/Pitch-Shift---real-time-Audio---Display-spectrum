@@ -49,7 +49,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_stop = new System.Windows.Forms.Button();
-            this.knobControl1 = new KnobControl.KnobControl();
+            //this.knobControl1 = new KnobControl.KnobControl();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
@@ -219,32 +219,6 @@
             this.button_stop.UseVisualStyleBackColor = true;
             this.button_stop.Click += new System.EventHandler(this.button_stop_Click);
             // 
-            // knobControl1
-            // 
-            this.knobControl1.EndAngle = 405F;
-            this.knobControl1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.knobControl1.knobBackColor = System.Drawing.Color.White;
-            this.knobControl1.KnobPointerStyle = KnobControl.KnobControl.knobPointerStyle.circle;
-            this.knobControl1.LargeChange = 5;
-            this.knobControl1.Location = new System.Drawing.Point(674, 49);
-            this.knobControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.knobControl1.Maximum = 30;
-            this.knobControl1.Minimum = -30;
-            this.knobControl1.Name = "knobControl1";
-            this.knobControl1.PointerColor = System.Drawing.Color.SlateBlue;
-            this.knobControl1.ScaleColor = System.Drawing.Color.Black;
-            this.knobControl1.ScaleDivisions = 11;
-            this.knobControl1.ScaleFont = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
-            this.knobControl1.ScaleSubDivisions = 4;
-            this.knobControl1.ShowLargeScale = true;
-            this.knobControl1.ShowSmallScale = false;
-            this.knobControl1.Size = new System.Drawing.Size(133, 133);
-            this.knobControl1.SmallChange = 1;
-            this.knobControl1.StartAngle = 135F;
-            this.knobControl1.TabIndex = 4;
-            this.knobControl1.Value = 0;
-            this.knobControl1.ValueChanged += new KnobControl.ValueChangedEventHandler(this.knobControl1_ValueChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -261,7 +235,6 @@
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.knobControl1);
             this.Controls.Add(this.comboBox_speaker);
             this.Controls.Add(this.comboBox_mic);
             this.Controls.Add(this.label2);
@@ -287,7 +260,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox_mic;
         private System.Windows.Forms.ComboBox comboBox_speaker;
-        private KnobControl.KnobControl knobControl1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button_start;
